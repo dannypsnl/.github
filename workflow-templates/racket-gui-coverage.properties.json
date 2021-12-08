@@ -1,0 +1,12 @@
+{
+    "name": "Racket GUI Coverage",
+    "description": "Racket GUI package coverage to coveralls",
+    "iconName": "racket-icon",
+    "categories": [
+        "Racket"
+    ],
+    "filePatterns": [
+        "info.rkt$",
+        ".*\\.md$"
+    ]
+}
