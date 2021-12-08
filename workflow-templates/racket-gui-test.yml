@@ -42,4 +42,4 @@ jobs:
           version: ${{ matrix.racket-version }}
       - run: raco pkg install --auto --skip-installed
       - run: |
-          xvfb-run -a make test
+          xvfb-run -a raco test .

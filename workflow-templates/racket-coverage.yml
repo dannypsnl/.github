@@ -42,5 +42,5 @@ jobs:
           packages: "cover, cover-coveralls"
       - run: raco pkg install --auto --skip-installed
       - run: |
-          make test
+          raco test .
           raco cover -b -f coveralls .
