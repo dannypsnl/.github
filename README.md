@@ -1,4 +1,7 @@
 # workflow templates
 
-1. [racket package](https://github.com/dannypsnl/.github/blob/develop/workflow-templates/racket-test.yml)
-2. [racket gui package](https://github.com/dannypsnl/.github/blob/develop/workflow-templates/racket-gui-test.yml)
+1. racket package test
+2. racket gui package test
+3. racket package coverage
+4. racket gui package coverage
+5. racket document publish to github pages
