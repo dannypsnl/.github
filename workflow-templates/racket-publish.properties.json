@@ -1,0 +1,12 @@
+{
+    "name": "Racket Publish",
+    "description": "Publish package's document to GitHub Pages",
+    "iconName": "racket-icon",
+    "categories": [
+        "Racket"
+    ],
+    "filePatterns": [
+        "info.rkt$",
+        ".*\\.md$"
+    ]
+}
