@@ -1,0 +1,12 @@
+{
+    "name": "Julia Publish",
+    "description": "Publish Julia document",
+    "iconName": "icon",
+    "categories": [
+        "Julia"
+    ],
+    "filePatterns": [
+        "Project.toml$",
+        ".*\\.md$"
+    ]
+}

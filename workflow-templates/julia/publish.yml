@@ -2,7 +2,7 @@ name: Julia Publish
 
 on:
   push:
-    branches: ["*"]
+    branches: [$default-branch]
     paths: ["**publish.yml", "**.jl", "**.md"]
   pull_request:
     branches: ["*"]
