@@ -1,7 +1,7 @@
 {
     "name": "Racket GUI Coverage",
     "description": "Racket GUI package coverage to coveralls",
-    "iconName": "racket-icon",
+    "iconName": "icon",
     "categories": [
         "Racket"
     ],

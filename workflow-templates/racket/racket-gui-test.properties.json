@@ -1,7 +1,7 @@
 {
-    "name": "Racket Test",
-    "description": "Racket test package",
-    "iconName": "racket-icon",
+    "name": "Racket GUI Test",
+    "description": "Racket test GUI package",
+    "iconName": "icon",
     "categories": [
         "Racket"
     ],
