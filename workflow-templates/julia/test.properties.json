@@ -1,0 +1,12 @@
+{
+    "name": "Julia Test",
+    "description": "Julia test package",
+    "iconName": "icon",
+    "categories": [
+        "Julia"
+    ],
+    "filePatterns": [
+        "Project.toml$",
+        ".*\\.md$"
+    ]
+}
