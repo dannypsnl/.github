@@ -30,6 +30,7 @@ jobs:
       - name: Build
         run: |
           raco pkg install --auto --skip-installed
+          raco scribble --htmls ++main-xref-in --redirect-main http://docs.racket-lang.org/ --dest doc scribblings/${{ github.event.repository.name }}.scrbl
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
