@@ -1,7 +1,7 @@
 {
     "name": "Racket Publish",
     "description": "Publish package's document to GitHub Pages",
-    "iconName": "icon",
+    "racket-iconName": "racket-icon",
     "categories": [
         "Racket"
     ],

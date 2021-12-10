@@ -1,7 +1,7 @@
 {
     "name": "Racket Coverage",
     "description": "Racket package coverage to coveralls",
-    "iconName": "icon",
+    "racket-iconName": "racket-icon",
     "categories": [
         "Racket"
     ],
