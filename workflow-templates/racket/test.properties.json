@@ -1,0 +1,12 @@
+{
+    "name": "Racket Test",
+    "description": "Racket test package",
+    "iconName": "racket-icon",
+    "categories": [
+        "Racket"
+    ],
+    "filePatterns": [
+        "info.rkt$",
+        ".*\\.md$"
+    ]
+}
