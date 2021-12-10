@@ -34,6 +34,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # simply assume your repository name same as collection name
-          publish_dir: doc/${{ github.event.repository.name }}
+          publish_dir: doc
           publish_branch: master
