@@ -1,7 +1,7 @@
 {
     "name": "Julia Publish",
     "description": "Publish Julia document",
-    "julia-iconName": "julia-icon",
+    "iconName": "julia-icon",
     "categories": [
         "Julia"
     ],

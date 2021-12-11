@@ -1,7 +1,7 @@
 {
     "name": "Julia Test",
     "description": "Julia test package",
-    "julia-iconName": "julia-icon",
+    "iconName": "julia-icon",
     "categories": [
         "Julia"
     ],
