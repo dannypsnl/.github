@@ -1,6 +1,6 @@
-{
-    "name": "Julia Publish",
-    "description": "Publish Julia package's document",
+ {
+    "name": "Julia Standalone Publish",
+    "description": "Publish standalone document via Julia Documenter",
     "iconName": "julia-icon",
     "categories": [
         "Julia"
