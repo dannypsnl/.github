@@ -1,5 +1,4 @@
 name: Racket Coverage
-
 on:
   push:
     branches:
@@ -20,27 +19,30 @@ on:
 jobs:
   coverage:
     runs-on: ubuntu-latest
-    environment: test-env
-    env:
-      COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
     steps:
       - uses: actions/checkout@master
-      - name: Cache installed packages
+      - name: Cache Racket dependencies
         uses: actions/cache@v2
         with:
           path: |
             ~/.cache/racket
             ~/.local/share/racket
-          key: ${{ runner.os }}-primes
+          key: ${{ runner.os }}-racket
       - name: Setup Racket
         uses: Bogdanp/setup-racket@v1.7
         with:
-          architecture: "x64"
-          distribution: "minimal"
+          architecture: x64
+          distribution: full
           variant: "CS"
           version: "stable"
-          packages: "cover, cover-coveralls"
-      - run: raco pkg install --auto --skip-installed
+      - run: raco pkg install --no-docs --auto --skip-installed
       - run: |
-          xvfb-run -a raco test .
-          raco cover -b -f coveralls .
+          raco cover -b .
+          raco cover-badge
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: coverage
+          publish_branch: gh-pages
+          destination_dir: coverage

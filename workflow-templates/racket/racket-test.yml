@@ -1,6 +1,7 @@
 name: Racket Test
-
 on:
+  schedule:
+    - cron: "0 9 * * *"
   push:
     branches:
       - "*"
@@ -32,14 +33,14 @@ jobs:
           path: |
             ~/.cache/racket
             ~/.local/share/racket
-          key: ${{ runner.os }}-primes
+          key: ${{ runner.os }}-racket
       - name: Setup Racket
         uses: Bogdanp/setup-racket@v1.7
         with:
-          architecture: "x64" # (x64 or x86), ignored on Linux
-          distribution: "minimal"
+          architecture: x64
+          distribution: full
           variant: ${{ matrix.racket-variant }}
           version: ${{ matrix.racket-version }}
-      - run: raco pkg install --auto --skip-installed
+      - run: raco pkg install --no-docs --auto --skip-installed
       - run: |
-          raco test .
+          raco test -x .
