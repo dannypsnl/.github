@@ -1,5 +1,7 @@
 # workflow templates
 
+To use this package, just fork it, then when you create any github action you can use templates from here.
+
 ### Racket
 
 1. package test
