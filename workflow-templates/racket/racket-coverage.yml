@@ -21,20 +21,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Cache Racket dependencies
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/racket
-            ~/.local/share/racket
-          key: ${{ runner.os }}-racket
       - name: Setup Racket
-        uses: Bogdanp/setup-racket@v1.7
+        uses: Bogdanp/setup-racket@v1.8.1
         with:
           architecture: x64
           distribution: full
           variant: "CS"
           version: "stable"
+          packages: "cover, cover-badge"
       - run: raco pkg install --no-docs --auto --skip-installed
       - run: |
           raco cover -b .

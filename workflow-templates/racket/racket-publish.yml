@@ -14,14 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Cache installed packages
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/racket
-            ~/.local/share/racket
-          key: ${{ runner.os }}-primes
-      - uses: Bogdanp/setup-racket@v1.7
+      - uses: Bogdanp/setup-racket@1.8.1
         with:
           architecture: "x64"
           distribution: "minimal"
