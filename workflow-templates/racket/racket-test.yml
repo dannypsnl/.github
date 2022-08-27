@@ -27,6 +27,15 @@ jobs:
         racket-version: ["stable", "current"]
     steps:
       - uses: actions/checkout@master
+      - name: cache racket modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cache/racket
+            ~/.local/share/racket
+          key: ${{ runner.os }}-${{ hashFiles('**/info.rkt') }}
+          restore-keys: |
+            ${{ runner.os }}-
       - name: Setup Racket
         uses: Bogdanp/setup-racket@v1.8.1
         with:
