@@ -16,10 +16,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: Bogdanp/setup-racket@v1.8.1
         with:
-          architecture: "x64"
-          distribution: "minimal"
-          variant: "CS"
-          version: "stable"
+          architecture: x64
+          distribution: full
+          variant: CS
+          version: stable
       - name: Build
         run: |
           raco pkg install --auto --skip-installed

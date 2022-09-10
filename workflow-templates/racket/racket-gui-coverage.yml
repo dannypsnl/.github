@@ -31,7 +31,7 @@ jobs:
           packages: "cover, cover-badge"
       - run: raco pkg install --no-docs --auto --skip-installed
       - run: |
-          raco cover -b .
+          xvfb-run -a raco cover -b .
           raco cover-badge
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
