@@ -1,0 +1,11 @@
+{
+    "name": "Lean CI",
+    "description": "Lean package testing",
+    "iconName": "lean-icon",
+    "categories": [
+        "Lean"
+    ],
+    "filePatterns": [
+        ".*\\.md$"
+    ]
+}
