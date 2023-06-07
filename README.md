@@ -2,6 +2,10 @@
 
 To use this package, just fork it, then when you create any github action you can use templates from here.
 
+### Lean
+
+1. package test
+
 ### Racket
 
 1. package test
