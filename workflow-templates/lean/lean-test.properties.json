@@ -6,6 +6,6 @@
         "Lean"
     ],
     "filePatterns": [
-        ".*\\.md$"
+        ".*\\.lean$"
     ]
 }
